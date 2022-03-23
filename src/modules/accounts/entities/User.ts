@@ -1,10 +1,4 @@
-import {
-  Column,
-  CreateDateColumn,
-  Entity,
-  PrimaryColumn,
-  Unique,
-} from "typeorm";
+import { Column, CreateDateColumn, Entity, PrimaryColumn } from "typeorm";
 import { v4 as uuidV4 } from "uuid";
 
 @Entity("users")
@@ -25,7 +19,7 @@ class User {
   password: string;
 
   @Column()
-  drive_license: string;
+  driver_license: string;
 
   @Column()
   isAdmin: boolean;
